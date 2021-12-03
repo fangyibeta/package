@@ -1,0 +1,27 @@
+#cd 到本地作为仓库的文件夹
+cd D:\package                            
+
+#设置用户名和电子邮件地址
+git config --global user.name 'alex'        
+git config --global user.email 'ad_as@126.com'
+
+#查看所有设置及其来源：
+git config --list --show-origin
+
+#创建一个空的 Git 存储库或重新初始化现有的存储库
+git init
+
+#管理一组跟踪的存储库
+git remote add origin https://github.com/fangyibeta/package.git
+
+#显示工作树状态
+git status
+
+#将文件内容添加到索引
+git add *
+
+#创建一个新的提交对象
+git commit -m 'first_commit'
+
+#更新到远端库
+git push -u origin master
